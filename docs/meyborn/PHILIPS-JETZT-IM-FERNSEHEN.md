@@ -122,7 +122,7 @@ Vor dem Bauen einen kurzen Plan vorlegen: welche Dateien des Launchers betroffen
 
 ## Regeln
 
-- `AGENTS.md` dieses Repos gilt.
+- `AGENTS.md` dieses Repos gilt, mit einem Konflikt, den Felix entscheiden muss: Der Launcher hat laut `AGENTS.md` bewusst keine Netzwerk-Berechtigung, keine Hintergrunddienste und keine neuen Abhängigkeiten. Programmdaten und Senderwechsel brauchen aber das Heimnetz. Zwei Wege: ein eigener Zusatz unter `addons/`, der die Daten holt und schaltet, oder eine bewusste Abweichung nur in diesem Fork. Für Stufe 1 stellt sich die Frage nicht, die Beispieldatei liegt im APK. Im Plan beide Wege kurz gegenüberstellen.
 - Alle Werte kommen aus den Meyborn-Tokens: `plattformen/fire-tv/android/values/meyborn_colors.xml` und `meyborn_dimens.xml` in `fepe89/meyborn-ci`. Keine freien Farbwerte im Code. Fehlt ein Wert, wird er in `tokens/meyborn.tokens.json` ergänzt und neu erzeugt, nach Rücksprache mit Felix.
 - Schriften Space Grotesk und Inter als Dateien im APK (SIL Open Font License). Symbole nur aus Lucide.
 - Genau eine Akzentfarbe: Türkis `#2ED3C6` für Anwählbares, Aktives und den Fokus. Lila und Apricot tragen nur Dringlichkeit.
